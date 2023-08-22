@@ -404,9 +404,9 @@ body {
 }
 
 .gallery.expanded {
-    height: auto;
     -webkit-mask-image: none;
     mask-image: none;
+    height: auto;
 }
 
 .grid {
