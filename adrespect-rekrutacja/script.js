@@ -36,4 +36,10 @@ const gallery = document.getElementById('gallery');
 const showGalleryButton = document.getElementById('showGalleryButton');
 showGalleryButton.addEventListener('click', function() {
     gallery.classList.toggle('expanded');
+
+    var masonry = new Masonry(expandedGallery.querySelector('.grid'), {
+        itemSelector: '.grid-item',
+        columnWidth: '.grid-item',
+        percentPosition: true
+    });
 });
